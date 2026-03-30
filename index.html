@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang='de'>
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bon-Kasse App</title>
+
 style.css
 manifest.json
-<meta name='theme-color' content='#4CAF50'>
+
+<meta name="theme-color" content="#4CAF50">
+
+script.js</script>
 </head>
+
 <body>
 <h1>Bon-Kasse</h1>
 <p>Die Bonpreise werden automatisch gespeichert (offline & dauerhaft).</p>
 
 <div id='setup'>
-    <h2>Bon-Setup</h2>
-    <div id='bon-list'></div>
+ist'></div>
     <button onclick='addBon()'>Bon hinzufügen</button>
     <button onclick='saveBons()'>Speichern</button>
 </div>
@@ -27,7 +31,6 @@ manifest.json
     <p>Rückgeld: <span id='change'>0.00</span> €</p>
 </div>
 
-script.jsscript>
 <script>
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js');
