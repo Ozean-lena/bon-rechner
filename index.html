@@ -33,5 +33,11 @@ script.jsscript>
     <p>Rückgeld: <span id="change">0.00</span> €</p>
 </div>
 
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
 </body>
 </html>
