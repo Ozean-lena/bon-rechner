@@ -1,0 +1,7 @@
+body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+h1 { color: #2E7D32; }
+button { background: #4CAF50; color: white; border: none; padding: 10px 15px; margin: 5px; border-radius: 5px; cursor: pointer; }
+button:hover { background: #45A049; }
+#buttons button { display: inline-block; }
+#bon-list input { margin: 5px; }
+div { margin-bottom: 20px; }
