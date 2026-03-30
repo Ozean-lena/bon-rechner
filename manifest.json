@@ -1,0 +1,9 @@
+{
+  "name": "Bon-Kasse App",
+  "short_name": "BonKasse",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": []
+}
