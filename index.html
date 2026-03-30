@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='de'>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +7,31 @@
 
 style.css
 manifest.json
-
 <meta name="theme-color" content="#4CAF50">
 
-script.js</script>
+script.jsscript>
 </head>
 
 <body>
 <h1>Bon-Kasse</h1>
 <p>Die Bonpreise werden automatisch gespeichert (offline & dauerhaft).</p>
 
-<div id='setup'>
-ist'></div>
-    <button onclick='addBon()'>Bon hinzufügen</button>
-    <button onclick='saveBons()'>Speichern</button>
+<div id="setup">
+    <h2>Bon-Setup</h2>
+    <div id="bon-list"></div>
+    <button onclick="addBon()">Bon hinzufügen</button>
+    <button onclick="saveBons()">Speichern</button>
 </div>
 
-<div id='kasse'>
+<div id="kasse">
     <h2>Kasse</h2>
-    <div id='buttons'></div>
-    <p>Gesamt: <span id='total'>0.00</span> €</p>
-    <label>Erhaltenes Geld: <input id='received' type='number' step='0.01' oninput='calcChange()'></label>
-    <p>Rückgeld: <span id='change'>0.00</span> €</p>
+    <div id="buttons"></div>
+    <p>Gesamt: <span id="total">0.00</span> €</p>
+    <label>Erhaltenes Geld: 
+        <input id="received" type="number" step="0.01" oninput="calcChange()">
+    </label>
+    <p>Rückgeld: <span id="change">0.00</span> €</p>
 </div>
 
-<script>
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-}
-</script>
 </body>
 </html>
